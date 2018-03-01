@@ -52,6 +52,7 @@ nav a {
 	text-decoration: none;
 	color: var(--primary);
 	margin: 0 5px;
+	font-size: 18px;
 }
 nav a.active_tab {
 	color: var(--secondary);
