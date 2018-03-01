@@ -1,0 +1,135 @@
+:root {
+    --primary: #222;
+    --secondary: #FF4A29;
+    --light-text: #888;
+}
+/* ------------------- RESETS */
+h1,h2,h3,h4,h5,h6,p {
+	margin: 0;
+}
+a {
+	color: inherit;
+}
+body {
+	margin: 0;
+	padding: 0;
+	color: #222;
+	width: 100%;
+	font-family: sans-serif;
+}
+li {
+	list-style: none;
+	margin: 5px 0;
+}
+/* ------------------- HEADER */
+header {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 16px 20px;
+	background: #FFF;
+}
+.book-author {
+	color: #444;
+}
+.book-title {
+	color: #222;
+}
+/* ------------------- CHAPTER NAVIGATION */
+nav {
+	position: fixed;
+	top: 20px;
+	left: 100%;
+	transform: translateX(calc(-100% - 20px));
+	display: flex;
+}
+nav a {
+	line-height: 2em;
+	text-decoration: none;
+	color: var(--primary);
+	margin: 0 5px;
+}
+nav a.active_tab {
+	color: var(--secondary);
+}
+.chapter {
+	font-size: 166px;
+	margin-bottom: 20px;
+}
+/* ------------------- */
+main {
+	margin: 100px auto;
+	width: 90%;
+	max-width: 600px;
+}
+main.photo-essay {
+	width: 80%;
+	max-width: none;
+}
+/* ------------------- */
+.img-container {
+	width: 100%;
+	margin: 50px auto;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+}
+img {
+	padding: 10px;
+	box-sizing: border-box;
+	max-height: 90vh;
+	max-width: 100%;
+}
+img.two {
+	max-width: 50%;
+}
+img.three {
+	max-width: 33%;
+}
+/* ------------------- */
+p {
+	line-height: 1.8em;
+	text-indent: 4em;
+	color: #222;
+	font-weight: bold;
+}
+p span {
+	font-weight: 300;
+}
+.italicized {
+	font-style: italic;
+}
+blockquote {
+	font-weight: 300;
+	font-size: .9em;
+	text-indent: none;
+	margin: 1em 4em;
+	line-height: 2em;
+	color: var(--light-text);
+}
+blockquote > span {
+	font-style: italic;
+}
+.p-list {
+	margin: 30px 0 30px 4em; 
+}
+.p-list > p {
+	margin: 0 5px;
+	text-indent: 0;
+}
+
+
+/* iPad Size - chapter nav is placed vertically on left side */
+@media only screen and (min-width: 768px) {  
+	nav {
+		position: fixed;
+		top: 50%;
+		transform: translateY(-50%);
+		left: 30px;
+		display: flex;
+		flex-flow: column;
+		justify-content: center;
+	}
+}
