@@ -19,7 +19,9 @@ body {
 	padding: 0;
 	color: #222;
 	width: 100%;
-	font-family: sans-serif;
+	font-family: 'Open Sans', sans-serif;
+	
+	
 }
 li {
 	list-style: none;
@@ -65,7 +67,7 @@ nav a.active_tab {
 }
 .chapter {
 	font-size: 166px;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 }
 /* ------------------- */
 main {
@@ -80,7 +82,7 @@ main.photo-essay {
 /* ------------------- */
 .img-container {
 	width: 100%;
-	margin: 50px auto;
+	margin: 30px auto;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
