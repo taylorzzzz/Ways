@@ -8,7 +8,7 @@ h1,h2,h3,h4,h5,h6,p {
 	margin: 0;
 }
 p {
-	font-size: 22px;
+	font-size: 1.2rem;
 }
 a {
 	color: inherit;
@@ -58,7 +58,7 @@ nav a {
 	text-decoration: none;
 	color: var(--primary);
 	margin: 0 5px;
-	font-size: 18px;
+	font-size: 1.2rem;
 }
 nav a.active_tab {
 	color: var(--secondary);
