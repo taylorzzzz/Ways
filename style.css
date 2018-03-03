@@ -1,6 +1,6 @@
 :root {
     --primary: #222;
-    --secondary: #FF4A29;
+    --secondary, : #FF4A29;
     --light-text: #888;
 }
 /* ------------------- RESETS */
@@ -17,11 +17,9 @@ a {
 body {
 	margin: 0;
 	padding: 0;
-	color: #222;
+	color: var(--primary, #222);
 	width: 100%;
 	font-family: 'Open Sans', sans-serif;
-	
-	
 }
 li {
 	list-style: none;
@@ -41,14 +39,9 @@ header {
 	z-index: 100;
 }
 .book-header {
+	color: var(--primary);
+}
 
-}
-.book-author {
-	color: #444;
-}
-.book-title {
-	color: #222;
-}
 /* ------------------- CHAPTER NAVIGATION */
 nav {
 	display: flex;
@@ -58,12 +51,12 @@ nav {
 nav a {
 	line-height: 2em;
 	text-decoration: none;
-	color: var(--primary);
+	color: var(--primary, #222);
 	margin: 0 5px;
 	font-size: 1.2rem;
 }
 nav a.active_tab {
-	color: var(--secondary);
+	color: var(--secondary, #FF4A29);
 }
 .chapter {
 	font-size: 166px;
@@ -104,12 +97,11 @@ img.three {
 p {
 	line-height: 1.8em;
 	text-indent: 3em;
-	color: #222;
+	color: var(--primary, #222);
 	font-weight: 400;
 	margin: 30px 0;
 }
 p span {
-	color: #444;
 	font-weight: 300;
 }
 .italicized {
@@ -118,10 +110,10 @@ p span {
 blockquote {
 	font-weight: 300;
 	font-size: .9em;
-	text-indent: none;
+	text-indent: 0;
 	margin: 1em 4em;
 	line-height: 2em;
-	color: var(--light-text);
+	color: var(--light-text, #888);
 }
 blockquote > span {
 	font-style: italic;
@@ -144,7 +136,7 @@ blockquote > span {
 	text-decoration: underline;
 }
 .next-chapter:hover {
-	color: var(--secondary);
+	color: var(--secondary, #FF4A29);
 }
 
 /* ------------------- HOME PAGE */
