@@ -1,8 +1,0 @@
-Some useful regex commands for cleaning up the txt files and preparing them for conversion to HTML:
-
-
-Remove newlines from inside paragraphs - [a-zA-Z.,):–?-]\n[^\s]
-	- This looks for characters that precede newlines (\n) which are not then followed by whitespace characters (which they would in the case of end-of-paragraphs where we do not want to get rid of the newline)
-	- What we want to do here is basically go in and replace all of the \n characters that lie within paragraphs and replace them with spaces. 
-
-Remove newlines from inside paragraphs that are apart of indented quote blocks - [^\n]\n\t
