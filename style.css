@@ -20,6 +20,7 @@ body {
 	color: var(--primary, #222);
 	width: 100%;
 	font-family: 'Open Sans', sans-serif;
+	background: red;
 }
 li {
 	list-style: none;
