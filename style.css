@@ -29,7 +29,7 @@ li {
 header {
 	display: flex;
 	justify-content: space-between;
-	position: fixed;
+	
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -220,6 +220,7 @@ blockquote > span {
 		flex-wrap: wrap;
 		background: transparent;
 		width: 300px;
+		position: fixed;
 	}
 	header nav {
 		margin-top: 20px;
