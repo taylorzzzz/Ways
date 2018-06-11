@@ -3,6 +3,11 @@
     --secondary, : #FF4A29;
     --light-text: #888;
 }
+
+html {
+	font-size: 62.5%;
+}
+
 /* ------------------- RESETS */
 h1,h2,h3,h4,h5,h6,p {
 	margin: 0;
@@ -20,6 +25,7 @@ body {
 	color: var(--primary, #222);
 	width: 100%;
 	font-family: 'Open Sans', sans-serif;
+	box-sizing: border-box;
 }
 li {
 	list-style: none;
