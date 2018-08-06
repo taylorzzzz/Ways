@@ -13,7 +13,7 @@ h1,h2,h3,h4,h5,h6,p {
 	margin: 0;
 }
 p {
-	font-size: 1.2rem;
+	font-size: 1.6rem;
 }
 a {
 	color: inherit;
@@ -58,8 +58,8 @@ nav a {
 	line-height: 2em;
 	text-decoration: none;
 	color: var(--primary, #222);
-	margin: 0 5px;
-	font-size: 1.2rem;
+	margin: 0 10px;
+	font-size: 1.6rem;
 }
 nav a.active_tab {
 	color: var(--secondary, #FF4A29);
@@ -101,7 +101,7 @@ img.three {
 }
 /* ------------------- TEXT */
 p {
-	line-height: 1.8em;
+	line-height: 2em;
 	text-indent: 3em;
 	color: var(--primary, #222);
 	font-weight: 400;
@@ -217,7 +217,7 @@ blockquote > span {
 /* ------------------- RESPONSIVE STYLING */
 @media only screen and (min-width: 450px) {
 	nav a {
-		margin: 0 10px;
+		margin: 0 15px;
 	}
 }
 @media only screen and (min-width: 1035px) {
